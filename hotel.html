@@ -1,0 +1,1414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>	VNtrip-hotel</title>
+<link rel="stylesheet" type="text/css" href="js/owl-carousel/owl.theme.default.min.css">
+<link rel="stylesheet" type="text/css" href="js/owl-carousel/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/font-awesome/font-awesome/all.css">
+<link rel="stylesheet" type="text/css" href="css/daterangepicker.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/tour.css">
+<link rel="stylesheet" type="text/css" href="css/hotel.css">
+<link rel="stylesheet" type="text/css" href="css/hotel.min.css">
+<link rel="stylesheet" type="text/css" href="css/responsive/style_res.css">
+<link rel="stylesheet" type="text/css" href="css/responsive/index_res.css">
+</head>
+<body>
+	<div id="fb-root"></div>
+	<script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v6.0"></script>
+	<header id="header" class="">
+		<div class="wrap_header_top">
+			<div class="container">
+				<div class="wrap_top">
+					<div class="logo">
+						<span class="humberger">
+							<span class="sanwich"></span>
+						</span>
+						<a href="index.html" title="index.html">
+							<img src="img/logo/logo.jpg" alt="">
+						</a>
+					</div>
+					<div class="top_header">
+						<div class="hotline">
+							<a href="" title="">
+								<i class="fas fa-phone-alt"></i>
+								<span>0963 266 688</span>
+							</a>
+						</div>
+						<div class="currency account">
+							<span class="show_wrap_show_">VND <i class="fal fa-angle-down"></i></span>
+							<div class="wrap_show_">
+								<span class="arrow"></span>
+								<div class="title_account">
+									<p>Currency</p>
+								</div>
+								<ul>
+									<li><a href="" title=""><span class="green">VND</span>Việt Nam Đồng</a></li>
+									<li><a href="" title=""><span class="green">USD</span>US Dollar</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="language account">
+							<span class="show_wrap_show_"><img src="img/logo/vi.png" alt="">Tiếng Việt <i class="fal fa-angle-down"></i></span>
+							<div class="wrap_show_">
+								<span class="arrow"></span>
+								<div class="title_account">
+									<p>Language</p>
+								</div>
+								<ul>
+									<li><a href="" title=""><span class="ensign"><img src="img/logo/vi.png" alt=""></span>Việt Nam</a></li>
+									<li><a href="" title=""><span class="ensign"><img src="img/logo/us.png" alt=""></span>English</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="sign">
+							<ul>
+								<li><a href="" title="">Đăng nhập</a></li>
+								<li><a href="" title="" class="btn-register">Đăng ký</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="menu_header">
+			<div class="container">
+				<div class="wrapMobile menu_part_mobile">
+					<div class="menu-top">
+						<div class="bar_user">
+							<span class="show_header_menu"><i class="fal fa-angle-left"></i></span>
+							<div class="interfaceUser">
+								<img src="img/logo/avartar.png" alt="">
+							</div>
+						</div>
+						<div class="login_right">
+							<ul>
+								<li><a href="" title="">Đăng nhập</a></li>
+								<li><a href="" title="">Đăng ký</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="mobile_show ">
+					<span>Tích lũy hạng phòng<span class="text-bold-2">Bạn cần ở thêm <b>2 đêm</b> để có thể nhận <b>1 đêm miễn phí</b></span></span>
+				</div>
+				<ul class="menu_main_mo wrapMobile padding_10p">
+					<li><a href="demo_tour.html" title="" class="">
+						<svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M25.2383 24.4766H22.9023V0.761719C22.9023 0.340988 22.5614 0 22.1406 0H8.42969C8.00896 0 7.66797 0.340988 7.66797 0.761719V9.95511C7.03102 9.47586 6.23955 9.19141 5.38281 9.19141C3.28273 9.19141 1.57422 10.8999 1.57422 13C1.57422 13.2553 1.60338 13.5152 1.6615 13.7772C0.599655 14.8004 0 16.1576 0 17.5703C0 20.2544 2.01241 22.481 4.62109 22.8488V24.4766H0.761719C0.340988 24.4766 0 24.8176 0 25.2383C0 25.659 0.340988 26 0.761719 26H25.2383C25.659 26 26 25.659 26 25.2383C26 24.8176 25.659 24.4766 25.2383 24.4766ZM13.7617 13.7617V10.7148H16.8086V13.7617H13.7617ZM9.1071 13.7617C9.16284 13.505 9.19141 13.2503 9.19141 13V10.7148H12.2383V13.7617H9.1071ZM16.8086 6.14453V9.19141H13.7617V6.14453H16.8086ZM13.7617 4.62109V1.52344H16.8086V4.62109H13.7617ZM21.3789 9.19141H18.332V6.14453H21.3789V9.19141ZM12.2383 9.19141H9.19141V6.14453H12.2383V9.19141ZM18.332 10.7148H21.3789V13.7617H18.332V10.7148ZM21.3789 4.62109H18.332V1.52344H21.3789V4.62109ZM12.2383 1.52344V4.62109H9.19141V1.52344H12.2383ZM1.52344 17.5703C1.52344 16.4569 2.06358 15.382 3.00522 14.6214C3.25774 14.4173 3.35315 14.0757 3.24306 13.7704C3.14526 13.4989 3.09766 13.247 3.09766 13C3.09766 11.74 4.1228 10.7148 5.38281 10.7148C6.64282 10.7148 7.66797 11.74 7.66797 13C7.66797 13.247 7.62036 13.4991 7.52257 13.7702C7.41248 14.0757 7.50789 14.4173 7.76041 14.6212C8.66991 15.3558 9.19141 16.4307 9.19141 17.5703C9.19141 19.4095 7.88081 20.9485 6.14453 21.3023V19.4093L7.44481 18.1089C7.74236 17.8115 7.74236 17.3293 7.44481 17.0318C7.14746 16.7342 6.66504 16.7342 6.36769 17.0318L6.14453 17.2547V13C6.14453 12.5793 5.80354 12.2383 5.38281 12.2383C4.96208 12.2383 4.62109 12.5793 4.62109 13V15.7313L4.39793 15.5083C4.10059 15.2108 3.61816 15.2108 3.32082 15.5083C3.02327 15.8057 3.02327 16.2879 3.32082 16.5854L4.62109 17.8859V21.3041C2.85664 20.954 1.52344 19.4131 1.52344 17.5703ZM6.14453 22.8478C6.6823 22.7704 7.19427 22.6129 7.66797 22.3872V24.4766H6.14453V22.8478ZM16.8086 24.4766H13.7617V19.8555H16.8086V24.4766ZM18.332 24.4766V19.8555H19.0938C19.5145 19.8555 19.8555 19.5145 19.8555 19.0938C19.8555 18.673 19.5145 18.332 19.0938 18.332C18.1372 18.332 12.2694 18.332 11.4766 18.332C11.0558 18.332 10.7148 18.673 10.7148 19.0938C10.7148 19.5145 11.0558 19.8555 11.4766 19.8555H12.2383V24.4766H9.19141V21.2978C10.1332 20.3357 10.7148 19.0198 10.7148 17.5703C10.7148 16.7685 10.5323 15.9907 10.1912 15.2852H21.3789V24.4766H18.332Z" fill="#666">
+             	
+                            </path>
+                        </svg>
+						<span>Địa Điểm</span>
+					</a></li>
+					<li><a href="list-tour.html" title="">
+						<svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.83684 24.2196C8.92858 24.2204 9.01883 24.2007 9.1017 24.1631L9.1027 24.1627L17.976 20.0181L17.1746 28.3974L17.1746 28.3976C17.1558 28.5975 17.2328 28.7943 17.3825 28.9279L17.3825 28.928L17.3854 28.9304C17.7984 29.2723 18.3132 29.467 18.8487 29.4845L18.8487 29.4846L18.8521 29.4846C19.002 29.4844 19.151 29.4655 19.2963 29.4286L19.2969 29.4284C20.0771 29.2248 20.663 28.5336 21.0556 27.4039L21.0559 27.4031L24.5965 16.9191L31.597 13.6536L31.5547 13.563L31.597 13.6536C32.6498 13.1623 33.452 12.4167 33.8998 11.5933C34.3479 10.7695 34.4428 9.86302 34.068 9.06317L34.068 9.06315L34.0666 9.06026C33.6447 8.23119 32.8369 7.66709 31.9135 7.55604C30.9042 7.40403 29.8728 7.56285 28.9561 8.01152C28.9559 8.01164 28.9556 8.01176 28.9554 8.01189L20.8724 11.8021L12.1784 8.40155L12.1784 8.40154L12.1772 8.4011C11.0645 7.98201 10.1525 7.98102 9.50147 8.45103L9.50136 8.45088L9.49657 8.4548C8.9603 8.89482 8.65519 9.55623 8.66825 10.2498L8.66824 10.2498L8.66828 10.2511C8.67461 10.451 8.77528 10.6358 8.9396 10.75L8.94001 10.7503L14.678 14.6947L11.4995 16.1989L5.88662 14.7731L5.88588 14.7729C5.6108 14.7053 5.3246 14.8293 5.1853 15.0759L5.18495 15.0765L3.77726 17.6106L3.77725 17.6106L3.77683 17.6113C3.69002 17.7709 3.67636 17.9603 3.7394 18.1308C3.80198 18.301 3.93479 18.4358 4.10393 18.5012L8.07244 20.1402L7.38238 20.4584L7.38178 20.4587C7.07084 20.6046 6.93368 20.9719 7.07223 21.2857L7.07221 21.2857L7.07307 21.2876L8.26825 23.8533C8.26826 23.8533 8.26827 23.8533 8.26828 23.8533C8.33806 24.0051 8.46531 24.1233 8.62185 24.1816L8.62263 24.1819C8.69113 24.2067 8.76376 24.2196 8.83684 24.2196ZM8.83684 24.2196C8.8367 24.2196 8.83655 24.2196 8.83641 24.2196L8.83727 24.1196V24.2196C8.83713 24.2196 8.83699 24.2196 8.83684 24.2196ZM17.987 19.9026L18.0922 19.8534L18.0811 19.969L17.987 19.9026ZM11.8275 17.4211L11.8284 17.4206L29.4934 9.16976L29.4934 9.16978L29.4953 9.16884C30.1795 8.83136 30.9501 8.7085 31.7054 8.81677L31.7054 8.8169L31.7104 8.81736C32.2201 8.86431 32.6743 9.15785 32.927 9.6029C33.1281 10.0384 33.0356 10.5882 32.6979 11.1258C32.3605 11.663 31.7864 12.1728 31.0608 12.5108L31.0605 12.5109L25.1526 15.2806L25.4495 14.4026L25.4497 14.4021C25.5611 14.0666 25.3791 13.7042 25.0437 13.593L25.0436 13.593C24.708 13.4818 24.3459 13.6636 24.2346 13.9989C24.2345 13.999 24.2345 13.9991 24.2345 13.9992L19.8626 27.0083C19.8625 27.0085 19.8624 27.0087 19.8624 27.0089C19.7342 27.3725 19.5921 27.6572 19.4415 27.8609C19.2914 28.0637 19.1385 28.1785 18.9889 28.2191C18.8111 28.2525 18.6278 28.2242 18.4687 28.1402L19.5252 17.047L19.5252 17.047C19.5582 16.6987 19.3028 16.3895 18.9541 16.3565C18.6057 16.3232 18.2967 16.579 18.2635 16.9271L18.2635 16.9272L18.1044 18.5756L9.12963 22.7595L8.46591 21.3465L9.87214 20.6883C10.1006 20.5871 10.2478 20.3609 10.2478 20.1112C10.2478 19.8609 10.1001 19.6343 9.87097 19.5335L9.87098 19.5335L9.86899 19.5326L5.21835 17.6048L6.05004 16.1277L11.4107 17.4586C11.4107 17.4586 11.4107 17.4586 11.4108 17.4586C11.5499 17.4938 11.6967 17.4805 11.8275 17.4211ZM16.0083 14.0753L9.96682 9.93633C10.0047 9.76123 10.0995 9.60335 10.2373 9.48775C10.3632 9.39846 10.5503 9.35376 10.8041 9.3682C11.0588 9.38269 11.3709 9.45632 11.7343 9.59217C11.7345 9.59225 11.7347 9.59233 11.7349 9.59241L19.2939 12.5407L16.0083 14.0753Z" fill="#666666" stroke="#666666" stroke-width="0.2">	
+                            </path>
+                        </svg>
+                        <span>Tour</span>
+					</a></li>
+					<li><a href="list-hotel.html" title="">
+						<svg width="26" height="23" viewBox="0 0 26 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M25.243 3.04707C25.2415 3.04707 25.2399 3.04688 25.2383 3.04688H18.332V2.28516C18.332 1.02515 17.3069 0 16.0469 0H9.95312C8.69312 0 7.66797 1.02515 7.66797 2.28516V3.04688H0.761719C0.337616 3.04688 0 3.39441 0 3.80859V20.5664C0 21.8264 1.02515 22.8516 2.28516 22.8516H23.7148C24.9749 22.8516 26 21.8264 26 20.5664V3.82466C26 3.82367 26 3.82268 26 3.82169C25.9708 3.32141 25.6632 3.04985 25.243 3.04707ZM9.19141 2.28516C9.19141 1.86522 9.53319 1.52344 9.95312 1.52344H16.0469C16.4668 1.52344 16.8086 1.86522 16.8086 2.28516V3.04688H9.19141V2.28516ZM24.1814 4.57031L21.8159 11.6666C21.7122 11.9782 21.4218 12.1875 21.0935 12.1875H16.8086V11.4258C16.8086 11.0051 16.4676 10.6641 16.0469 10.6641H9.95312C9.53239 10.6641 9.19141 11.0051 9.19141 11.4258V12.1875H4.90654C4.57825 12.1875 4.28784 11.9782 4.1841 11.6666L1.8186 4.57031H24.1814ZM15.2852 12.1875V13.7109H10.7148V12.1875H15.2852ZM24.4766 20.5664C24.4766 20.9863 24.1348 21.3281 23.7148 21.3281H2.28516C1.86522 21.3281 1.52344 20.9863 1.52344 20.5664V8.50249L2.73882 12.1484C3.05025 13.0831 3.92146 13.7109 4.90654 13.7109H9.19141V14.4727C9.19141 14.8934 9.53239 15.2344 9.95312 15.2344H16.0469C16.4676 15.2344 16.8086 14.8934 16.8086 14.4727V13.7109H21.0935C22.0785 13.7109 22.9498 13.0831 23.2612 12.1484L24.4766 8.50249V20.5664Z" fill="#666666">
+        
+                            </path>
+                        </svg>
+                        <span>Hotel</span>
+					</a></li>
+					<li><a href="list-combo.html" title="">
+						<svg width="25" height="26" viewBox="0 0 25 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M23.7451 13.3368C23.6405 13.1228 23.6405 12.8773 23.7451 12.6633L24.7148 10.6796C25.2547 9.57505 24.827 8.25855 23.741 7.68234L21.7905 6.64742C21.58 6.53581 21.4358 6.33715 21.3946 6.10259L21.0131 3.9277C20.8007 2.71677 19.6806 1.90306 18.4635 2.07526L16.2772 2.38452C16.0412 2.41783 15.8079 2.34196 15.6367 2.17636L14.0498 0.641154C13.1661 -0.213693 11.7818 -0.213743 10.8983 0.641154L9.31125 2.17652C9.14001 2.34216 8.90667 2.41788 8.67075 2.38467L6.48447 2.07541C5.267 1.90311 4.14728 2.71693 3.93486 3.92785L3.5534 6.10265C3.51221 6.33725 3.36795 6.53586 3.15756 6.64753L1.20706 7.68244C0.121062 8.2586 -0.306717 9.5752 0.233186 10.6797L1.20285 12.6634C1.30746 12.8775 1.30746 13.123 1.20285 13.337L0.233136 15.3207C-0.306767 16.4252 0.121011 17.7417 1.20701 18.3179L3.15751 19.3528C3.36795 19.4644 3.51221 19.6631 3.5534 19.8976L3.93486 22.0725C4.12824 23.1749 5.07347 23.948 6.15983 23.9479C6.26683 23.9479 6.3754 23.9404 6.48452 23.9249L8.6708 23.6157C8.90657 23.5822 9.14006 23.6582 9.3113 23.8238L10.8983 25.359C11.3401 25.7865 11.907 26.0002 12.474 26.0001C13.0409 26.0001 13.608 25.7864 14.0497 25.359L15.6367 23.8238C15.808 23.6582 16.0413 23.5826 16.2772 23.6157L18.4635 23.9249C19.6811 24.0972 20.8007 23.2834 21.0131 22.0725L21.3946 19.8977C21.4358 19.6631 21.5801 19.4645 21.7905 19.3528L23.741 18.3179C24.827 17.7417 25.2547 16.4251 24.7148 15.3206L23.7451 13.3368ZM23.0381 16.9932L21.0876 18.0281C20.4657 18.3581 20.0392 18.945 19.9176 19.6385L19.5361 21.8134C19.4643 22.2231 19.0855 22.4982 18.6735 22.4401L16.4873 22.1308C15.79 22.0321 15.1001 22.2565 14.5941 22.7459L13.0071 24.2811C12.7082 24.5703 12.2398 24.5703 11.9408 24.2811L10.3539 22.7459C9.9262 22.3322 9.36711 22.108 8.78343 22.108C8.67649 22.108 8.56868 22.1155 8.46072 22.1308L6.27444 22.44C5.86281 22.4982 5.48373 22.223 5.41183 21.8133L5.03031 19.6384C4.90864 18.9449 4.48218 18.358 3.86027 18.028L1.90977 16.9931C1.54232 16.7982 1.39759 16.3528 1.58025 15.9791L2.54997 13.9953C2.85912 13.3628 2.85912 12.6373 2.54997 12.0048L1.58025 10.0211C1.39759 9.64736 1.54232 9.20196 1.90977 9.00701L3.86027 7.9721C4.48213 7.64207 4.90864 7.05514 5.03026 6.36168L5.41173 4.18683C5.48363 3.77713 5.86236 3.5019 6.27434 3.56009L8.46061 3.86935C9.15758 3.96802 9.84775 3.74372 10.3538 3.25424L11.9408 1.71903C12.2397 1.42988 12.708 1.42988 13.007 1.71903L14.594 3.25424C15.1 3.74377 15.7901 3.96802 16.4872 3.86935L18.6734 3.56009C19.0851 3.50185 19.4642 3.77713 19.536 4.18683L19.9175 6.36173C20.0392 7.05519 20.4656 7.64217 21.0876 7.9721L23.038 9.00701C23.4055 9.20196 23.5502 9.64736 23.3676 10.0211L22.3979 12.0048C22.0887 12.6372 22.0887 13.3628 22.3979 13.9953L23.3676 15.979C23.5503 16.3528 23.4056 16.7982 23.0381 16.9932Z" fill="#666666"></path>
+                                    <path d="M17.952 7.52148C17.6593 7.22868 17.1845 7.22868 16.8917 7.52148L6.99499 17.4182C6.70219 17.711 6.70219 18.1857 6.99499 18.4785C7.14139 18.6249 7.3333 18.6982 7.52515 18.6982C7.717 18.6982 7.90895 18.625 8.0553 18.4785L17.952 8.58189C18.2449 8.28904 18.2449 7.81434 17.952 7.52148Z" fill="#666666"></path>
+                                    <path d="M9.47482 6.25195C7.9589 6.25195 6.72559 7.48527 6.72559 9.00118C6.72559 10.5171 7.9589 11.7504 9.47482 11.7504C10.9907 11.7504 12.224 10.5171 12.224 9.00118C12.224 7.48527 10.9907 6.25195 9.47482 6.25195ZM9.47482 10.2508C8.78577 10.2508 8.2252 9.69023 8.2252 9.00113C8.2252 8.31209 8.78577 7.75151 9.47482 7.75151C10.1639 7.75151 10.7245 8.31209 10.7245 9.00113C10.7244 9.69023 10.1639 10.2508 9.47482 10.2508Z" fill="#666666"></path>
+                                    <path d="M15.4729 14.2496C13.957 14.2496 12.7236 15.483 12.7236 16.9989C12.7236 18.5148 13.957 19.7481 15.4729 19.7481C16.9888 19.7481 18.2221 18.5148 18.2221 16.9989C18.2221 15.483 16.9888 14.2496 15.4729 14.2496ZM15.4729 18.2485C14.7838 18.2485 14.2232 17.6879 14.2232 16.9989C14.2232 16.3098 14.7838 15.7492 15.4729 15.7492C16.1619 15.7492 16.7225 16.3098 16.7225 16.9989C16.7225 17.6879 16.1619 18.2485 15.4729 18.2485Z" fill="#666666"></path>
+                        </svg>
+						<span>Combo</span>
+					</a></li>
+					<li><a href="blog.html" title="">
+						<svg width="27" height="23" viewBox="0 0 27 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M26.6062 7.41188L23.1397 0.478949C22.9719 0.184416 22.7363 0 22.3644 0H5.03207C4.6697 0 4.4274 0.179794 4.25673 0.478949L0.790269 7.41188C0.629771 7.75275 0.684715 8.09529 0.912173 8.36862L13.0448 22.2923C13.2095 22.4812 13.4475 22.5898 13.6982 22.5898C13.949 22.5898 14.187 22.4812 14.3517 22.2923L26.4843 8.36862C26.7103 8.09668 26.7677 7.75454 26.6062 7.41188ZM20.9622 1.73323L18.75 6.1576L15.4315 1.73323H20.9622ZM17.1647 6.93293H10.2318L13.6982 2.31098L17.1647 6.93293ZM11.965 1.73323L8.64643 6.1576L6.43425 1.73323H11.965ZM5.03207 2.80437L7.09634 6.93293H2.96779L5.03207 2.80437ZM3.47042 8.66616H7.92599L12.1984 18.6831L3.47042 8.66616ZM13.6982 17.7812L9.81059 8.66616H17.5859L13.6982 17.7812ZM15.198 18.6831L19.4705 8.66616H23.926L15.198 18.6831ZM20.3001 6.93293L22.3644 2.80437L24.4287 6.93293H20.3001Z" fill="#666666">
+                            	
+                            </path>
+                        </svg>
+						<span>Blogs</span>
+					</a></li>
+				</ul>
+				<div class="wrapMobile language_mobile">
+					<ul>
+						<li>
+							<a class="open-settings-box" data-type="language">Language <span class="language-menu-xs">
+								<img src="img/logo/vi.png" alt="">
+							</span></a>
+						</li>
+					</ul>
+				</div>
+				<div class="wrapMobile language_mobile">
+					<div>
+						<input type="checkbox" name="">
+						<span>Xem giá cuối <small><em>(bao gồm phí dịch vụ khách sạn)</em></small></span>
+					</div>
+				</div>
+				
+				<div class="wrapMobile contact_mobile">
+					<ul>
+						<li>
+							<a href="" title="">
+								<i class="fas fa-globe"></i>
+								<span>Về Vntrip</span>
+							</a>
+						</li>
+						<li>
+							<a href="" title="">
+								<i class="fad fa-home"></i>
+								<span>Liên hệ</span>
+							</a>
+						</li>
+						<li>
+							<a href="" title="">
+								<i class="fad fa-envelope"></i>
+								<span>cs@vntrip.vn</span>
+							</a>
+						</li>
+						<li>
+							<a href="" title="">
+								<i class="fad fa-phone-alt"></i>
+								<span>0963 266 688</span>
+							</a>
+						</li>
+						
+					</ul>
+				</div>
+				<div class="wrapMobile gooplay">
+					<a href="" title=""><img src="img/logo/play.png" alt=""></a>
+				</div>
+			</div>
+		</div>
+		<div   class="col-xs-12 header-search-form__outer" style="display:none;">
+				<div class="container">
+					<div class="searchbox-wrap clearfix">
+						<form id="header-search-form" action="" method="GET">
+							<div class="col-xs-12 header-search-form">
+								<div class="col-xs-12 col-sm-5 col-md-5 no-padding search-quantity">
+									<div class="col-xs-5 date-div check-in ">
+										<div class="form-group has-feedback date-menu-checkin">
+											<label class="control-label">Nhận phòng</label>
+											<input readonly type="text" class="form-control input-white" maxlength="12" id="datepicker-menu-chkin" name="di" class="datepicker-chkin" value="08-04-2020">
+											<span class="fa fa-calendar-o form-control-feedback"></span>
+										</div>
+									</div>
+									<div class="col-xs-5 date-div check-out ">
+										<div class="form-group has-feedback">
+											<label class="control-label">Trả phòng </label>
+											<input readonly type="text" class="form-control input-white" maxlength="12" id="datepicker-menu-chkout" name="do" class="datepicker-chkout" value="09-04-2020">
+											<span class="fa fa-calendar-o form-control-feedback"></span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+	</header><!-- /header -->
+	<main>
+		<div class="container">
+			<div class="link_title_page">
+				<ul>
+					<li><a href="index.html" title="">Home</a></li>
+					<li><span><i class="fal fa-angle-right"></i></span></li>
+					<li><a href="" title="">Khách sạn</a></li>
+					<li><span><i class="fal fa-angle-right"></i></span></li>
+					<li><span>VinOasis Phú Quốc</span></li>
+				</ul>
+			</div>
+			<div class="title_page hotel_price">
+				<h1>VinOasis Phú Quốc</h1>
+				<div class="price_tour">
+					<div class="price_old">Giá từ  <span>3.500.000đ</span></div>
+					<div class="price_new">2.500.000đ</div>
+					<a href="" title="" class="poster"><img src="img/tour/sprites.png" alt="">Tặng vé vui chơi công viên nước VinOasis</a>
+				</div>
+			</div>
+			<p class="anchor hotel_price_to"><i class="fad fa-map-marker-alt"></i>Bãi Dài, X. Gành Dầu, H. Phú Quốc, T. Kiên Giang, Việt Nam</p>
+			<div class="wrap_img">
+				<div class="col_img col_img_1"><img src="img/index/i1.jpg" alt="" type="button" data-toggle="modal" data-target="#modalImg"></div>
+				<div class="col_img col_img_2"><img src="img/index/i2.jpg" alt="" type="button" data-toggle="modal" data-target="#modalImg"></div>
+				<div class="col_img col_img_3"><img src="img/index/i3.jpg" alt="" type="button" data-toggle="modal" data-target="#modalImg"></div>
+				<div class="col_img col_img_4 show_modalImg">
+					<img src="img/index/i4.jpg" alt="">
+					<div class="see_modalImg" type="button" data-toggle="modal" data-target="#modalImg">
+						<span>See all 21 photos</span>
+					</div>
+				</div>
+			</div>
+			<div class="modal fade imgModal" id="modalImg" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+			  <div class="modal-dialog" role="document">
+			    <div class="modal-content">
+			      <div class="modal-body">
+			        
+			        <div id="slideImg" class="slide_show1 carousel fadeIn" data-ride="carousel">
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<img src="img/tour/s1.jpg" alt="">
+							</div>
+							<div class="carousel-item">
+								<img src="img/tour/s2.jpg" alt="">
+							</div>
+							<div class="carousel-item">
+								<img src="img/tour/s3.jpg" alt="">
+							</div>
+							<div class="carousel-item">
+								<img src="img/tour/s5.jpg" alt="">
+							</div>
+							<div class="carousel-item">
+								<img src="img/tour/s5.jpg" alt="">
+							</div>
+							
+						</div>
+						<a class="carousel-control-prev" href="#slideImg" role="button" data-slide="prev">
+							<span class="carousel-control-prev-icon" ><i class="fas fa-arrow-alt-circle-left"></i></span>
+						</a>
+						<a class="carousel-control-next" href="#slideImg" role="button" data-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"><i class="fas fa-arrow-alt-circle-right"></i></span>
+						</a>
+						</div>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+			<div class="review_hotel">
+				<span class="number">9.1</span>
+				<span class="color_green">TUYỆT VỜI</span>
+				<span> Dựa trên 29 đánh giá</span>
+			</div>
+			<div class="container hotel-details">	
+				<div class="bpv-col-right pull-right hidden-xs">
+					<div class="hotel-info">
+						<h3>Thông tin khách sạn</h3>
+						<ul>
+							<li><span>Số phòng: 1078</span></li>
+							<li><span>Ăn sáng miễn phí</span></li>							
+							<li><span>Bãi biển riêng</span></li>							
+							<li><span>Bể bơi ngoài trời</span></li>							
+							<li><span>Wifi miễn phí</span></li>							
+							<li><span>Dịch vụ hội họp</span></li>							
+							<li><span>Dịch vụ Spa/Massage</span></li>							
+							<li><span>Dịch vụ trông trẻ</span></li>																	
+						</ul>
+					</div>			
+					<div class="bpv-quick-contact clearfix margin-top-20 hidden-xs" data-display-on="1" data-slide-bar="1">
+					    <div class="avatar">
+					    	<img id="img_sale_support" width="60" class="img-circle" alt="Image User Support" src ="img/hotel/hotline.png"/>
+					    </div>
+					    <div class="content">
+					    	<div class="row">
+					    		<div class="col-xs-12">
+					    			<div class="text">Bạn cần hỗ trợ?</div>
+					    			<div class="border"></div>
+					    			<div class="hotline">
+					    				<span class="text-hl">
+											<span class="icon icon-phone-yellow"></span>
+											<a class="phone" href="tel:19006505">1900 6505</a>
+										</span>
+										<ul class="padding-left-20">
+											<li><a href="tel:02473072605">hn: (024) 7307 2605</a></li>
+											<li><a href="tel:02873072605">hcm: (028) 7307 2605</a></li>
+										</ul>
+									</div>
+					    		</div>
+					    		<div class="col-xs-12 padding-top-10">
+									<a href="" class="btn btn-white btn-block">
+										Liên hệ đặt khách sạn <span class="font-size-12 glyphicon glyphicon-circle-arrow-right pd-left-5"></span>
+									</a>
+					    		</div>
+					    	</div>
+					    </div>	
+					</div>		
+				</div>
+				<div class="bpv-col-left">
+					<div id="tab-details">
+			    		<div class="nav-details">
+			    			<ul class="nav nav-tabs tab-details hidden-xs">
+			                    <li role="presentation"  class="active ht-tab-cabins">
+					                <a href="#h_hotel_rate" data-toggle="tab">Hạng phòng</a>
+					            </li>
+					            <li role="presentation" class="ht-tab-policies">
+					                <a href="#h_hotel_policies" data-toggle="tab">Thông tin</a>
+					            </li>
+					            <li role="presentation" class="ht-tab-reviews">
+					                <a href="#h_tab_reviews" data-toggle="tab">Đánh giá</a>
+					            </li>
+					            <li role="presentation" class="ht-tab-question">
+					                <a href="#h_tab_comment" data-toggle="tab">Hỏi đáp</a>
+					            </li>
+					          	<li class="pull-right padding-top-5 price-block">
+						        	<button class="btn btn-orange btn_book_tour margin-left-20">Đặt ngay</button>
+						     	</li>
+					            <li class="pull-right padding-top-5 price-block">
+									<span class="price-origin text-unhighlight font-size-16"><span>3.500.000đ</span></span>
+									<span class="price-from"><span>2.500.000đ</span></span>
+									<span>/ đêm</span>
+								</li>
+					        </ul>
+			    		</div>
+					</div>			
+					<div class="visible-xs">
+						<div class="hotel-info">
+							<h3>Thông tin khách sạn</h3>
+							<ul>
+								<li><span>Số phòng: 1078</span></li>
+								<li><span>Ăn sáng miễn phí</span></li>							
+								<li><span>Bãi biển riêng</span></li>							
+								<li><span>Bể bơi ngoài trời</span></li>							
+								<li><span>Wifi miễn phí</span></li>							
+								<li><span>Dịch vụ hội họp</span></li>							
+								<li><span>Dịch vụ Spa/Massage</span></li>							
+								<li><span>Dịch vụ trông trẻ</span></li>																	
+							</ul>	
+						</div>
+					</div>
+					<div class="visible-xs overview-block margin-bottom-20">			
+						<a class="btn btn-green btn-overview btn-lg btn-block margin-top-10" data-id="h_hotel_rate" href="javascript:void(0)" onclick="go_position_id('#h_hotel_rate')">
+							<span class="icon icon-price-inclusion-white margin-right-5"></span>Hạng phòng	</a>
+						<a class="btn btn-border-green btn-overview btn-lg btn-block margin-top-10" data-id="h_hotel_policies" href="javascript:void(0)" onclick="go_position_id('#h_hotel_policies')">
+							<span class="icon icon-view-itinerary margin-right-5"></span>Thông tin	</a>
+						<a class="btn btn-border-green btn-overview btn-lg btn-block margin-top-10" data-id="h_tab_reviews" href="javascript:void(0)" onclick="go_position_id('#h_tab_reviews')">
+							<span class="icon icon-view-review margin-right-5"></span>Hỏi đáp	</a>
+					</div>
+					<div class="description margin-top-20 margin-bottom-20 font-zise-14 visible-xs">
+						<p style="text-align: justify;"><strong>VinOasis Phú Quốc</strong> là dòng Khách sạn Luxury 5* đầu tiên của Vingroup tại Phú Quốc. Là đứa con sinh sau để muộn, dòng sản phẩm VinOasis kế thừa đẩy đủ những điểm mạnh về chất lượng cũng như dịch vụ của những người anh lớn. </p>
+						<p style="text-align: justify;">Được thiết kế theo kiến trúc đương đại kết hợp với kiến trúc Á Đông, VinOasis Phú Quốc hiện lên vô cùng độc đáo và mới lạ trên đảo ngọc. Đây chắc chắn sẽ là điểm nghỉ dưỡng vô cùng lý tưởng cho du khách muốn lựa chọn một không gian đẹp - độc - lạ.</p>
+					</div>
+					<h2 class="bpv-collapse margin-top-25" data-target="#hotel_rate" id="h_hotel_rate">
+						Hạng phòng<span class="glyphicon glyphicon-chevron-up visible-xs"></span>
+					</h2>
+					<div class="tab-pane  active" id="hotel_rate">
+						<p style="text-align: justify;"><strong>VinOasis Phú Quốc</strong> là dòng Khách sạn Luxury 5* đầu tiên của Vingroup tại Phú Quốc. Là đứa con sinh sau để muộn, dòng sản phẩm VinOasis kế thừa đẩy đủ những điểm mạnh về chất lượng cũng như dịch vụ của những người anh lớn. </p>
+						<p style="text-align: justify;">Được thiết kế theo kiến trúc đương đại kết hợp với kiến trúc Á Đông, VinOasis Phú Quốc hiện lên vô cùng độc đáo và mới lạ trên đảo ngọc. Đây chắc chắn sẽ là điểm nghỉ dưỡng vô cùng lý tưởng cho du khách muốn lựa chọn một không gian đẹp - độc - lạ.</p>
+					</div>
+					<div class="bpv-check-rate-form margin-bottom-20 margin-top-20">
+						<h2>Chọn ngày để xem giá</h2>
+						<div class="content">
+							<div class="row">
+								<form id="check_rate_form" role="form" method="get">
+									<div class="col-xs-8 col-sm-3 col-md-3">				
+										<label for="checkin_date">Ngày nhận phòng</label>
+				    					<div class="icon-after icon-before">
+											<input type="text" id="hotel_date_1395" autocomplete="off" placeholder="" name="startdate" value="09/04/2020" class="form-control bpv-date-input " onchange="change_datepicker_date('#hotel_date_1395', '1','#night_nr_1395')"/>
+											<span class="icon icon-calendar"></span>
+										</div>
+										<input type="hidden" id="dpk_is_load_hotel_date_1395" value="1"/>
+										<input type="hidden" class="bpdatepicker" data-selected-date="09/04/2020" data-month-id="hotel_month_1395" data-day-id="hotel_day_1395" data-date-id="hotel_date_1395" data-loading-asyn="1" data-available-dates="[]">		   <input type="hidden" name="hotel_id" value="1395">
+							    		<input type="hidden" id="is_action" value="">
+							    		<input type="hidden" id="is_default" name="is_default" value="1">
+									</div>
+									<div class="col-xs-4 col-sm-2 col-md-2">
+										<label for="stay_night">Số đêm</label>
+									    <select class="form-control input-sm" id="night_nr_1395" name="night" onchange="change_datepicker_date('#hotel_date_1395', '','#night_nr_1395')">
+											  	<option value="1"  selected="selected">1</option>
+											  	<option value="2" >2</option>
+											  	<option value="3" >3</option>
+											  	<option value="4" >4</option>
+											  	<option value="5" >5</option>
+											  	<option value="6" >6</option>
+											  	<option value="7" >7</option>
+											  	<option value="8" >8</option>
+											  	<option value="9" >9</option>
+											  	<option value="10" >10</option>
+											  	<option value="11" >11</option>
+											  	<option value="12" >12</option>
+											  	<option value="13" >13</option>
+											  	<option value="14" >14</option>
+											  	<option value="15" >15</option>
+											</select>
+									</div>
+									<div class="col-xs-12 col-sm-4 col-md-4 col-check-out">
+									    <label for="checkout_date">Ngày trả phòng</label>				    
+									    <span class="help-block" style="font-size: 14px;" id="hotel_date_1395_end_show"></span>
+										<input type="hidden" name="enddate" id="hotel_date_1395_end" value="">
+									</div>
+									<div class="col-xs-12 col-sm-3 col-md-3 margin-top-10">	 
+										<button type="submit" value="check_rate" name="action" class="btn btn-blue btn-lg btn-block pull-right">Xem giá</button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+					<div id="rate_content">
+						<div class="room-types">
+							<div class="bpv-rate-table">
+								<table>
+									<thead class="hidden-xs">
+										<tr>
+											<td class="col-1" align="left">Chọn phòng của bạn</td>
+											<td class="col-2" align="center">Số người</td>
+											<td class="col-3" align="center">Giá phòng</td>
+										</tr>			
+									</thead>
+									<tbody>				
+										<tr >
+											<td>
+												<div class="row">
+													<div class="col-xs-12 col-md-6">
+														<img class="img-responsive" src="img/hotel/h1.jpg" alt="Standard">
+							            	 		</div>
+													<div class="col-xs-12 col-md-6 col-cabin-info">
+														<h4 class="text-highlight acc-name">Standard</h4>
+								              		 	<div class="margin-bottom-5">
+							    		      		 		<span class="icon icon-size-accommodation margin-right-5"></span>
+							    		      		 		42m<sup>2</sup>	    		      		 
+							    		      		 	</div>
+								    		      		<div class="margin-bottom-5">
+							    							<span class="icon icon-type-accommodation margin-right-5"></span>
+							    							2 giường đơn hoặc 1 giường đôi	    						
+							    						</div>
+							    						<div class="margin-bottom-5" style="color: #67a04f;">
+									      		 			<ul class="padding-left-15 margin-bottom-0">
+										      		 			<li class="margin-bottom-5">Bao gồm  ăn sáng, thuế VAT và phí dịch vụ.</li>
+									      		 			</ul>
+									      		 		</div>
+							            			</div>
+						            			</div>
+												<div class="visible-xs" style="border-top: 1px solid #ddd; padding: 10px 0 0; margin: 0 -8px">
+								                	<div class="text-center text-special" onclick="go_position_id('#h_hotel_rate')">
+								                	Chọn ngày để xem giá <i class="glyphicon glyphicon-arrow-up"></i>
+								                	</div>
+								                </div>
+											</td>
+											<td class="hidden-xs" align="center" style="vertical-align:middle;">
+												<span>
+													<span class="icon icon-person-lg"></span>
+													<span class="icon icon-person-lg"></span>
+												</span>						
+											</td>
+											<td class="hidden-xs col-rate" rowspan="5" class="col-rate" valign="middle" align="center">
+												<span onclick="go_position_id('#hotel_rate');" class="glyphicon glyphicon-circle-arrow-up text-special" style="font-size: 30px; cursor: pointer;">
+													
+
+												</span>
+												<br>
+												<span>(Chọn ngày để xem giá)</span>
+											</td>
+										</tr>
+										<tr>
+								     		<td class="" style="padding: 3px; background-color: #f7f7f7;" colspan="2"></td>
+								     	</tr>							
+										<tr >
+											<td>
+												<div class="row">
+													<div class="col-xs-12 col-md-6">
+														<img class="img-responsive" src="img/hotel/h2.jpg">
+													</div>
+													<div class="col-xs-12 col-md-6 col-cabin-info">
+														<h4 class="text-highlight acc-name">Junior Suite</h4>
+								              		 	<div class="margin-bottom-5">
+							    		      		 		<span class="icon icon-size-accommodation margin-right-5"></span>
+							    		      		 		84m<sup>2</sup>	    		      		 
+							    		      		 	</div>
+								    		      		<div class="margin-bottom-5">
+							    							<span class="icon icon-type-accommodation margin-right-5"></span>
+							    							2 giường đơn hoặc 1 giường đôi	    						
+							    						</div>
+							    						<div class="margin-bottom-5" style="color: #67a04f;">
+									      		 			<ul class="padding-left-15 margin-bottom-0">
+										      		 			<li class="margin-bottom-5">Bao gồm  ăn sáng, thuế VAT và phí dịch vụ.</li>
+									      		 			</ul>
+									      		 		</div>
+							            			</div>
+						            			</div>
+												<div class="visible-xs" style="border-top: 1px solid #ddd; padding: 10px 0 0; margin: 0 -8px">
+								                	<div class="text-center text-special" onclick="go_position_id('#h_hotel_rate')">
+								                	Chọn ngày để xem giá <i class="glyphicon glyphicon-arrow-up"></i>
+								                	</div>
+								                </div>
+											</td>
+											<td class="hidden-xs" align="center" style="vertical-align:middle;">
+												<span><span class="icon icon-person-lg"></span><span class="icon icon-person-lg"></span></span>						
+											</td>
+										</tr>
+										<tr>
+								     		<td class="" style="padding: 3px; background-color: #f7f7f7;" colspan="2"></td>
+								     	</tr>								
+										<tr >
+											<td>
+												<div class="row">
+													<div class="col-xs-12 col-md-6">
+														<img class="img-responsive" src="img/hotel/h3.jpg" alt="Vin Suite">
+													</div>
+													<div class="col-xs-12 col-md-6 col-cabin-info">
+														<h4 class="text-highlight acc-name">Vin Suite</h4>
+								              		 	<div class="margin-bottom-5">
+							    		      		 		<span class="icon icon-size-accommodation margin-right-5"></span>
+							    		      		 		125m<sup>2</sup>	    		      		 
+							    		      		 	</div>
+								    		      		<div class="margin-bottom-5">
+							    							<span class="icon icon-type-accommodation margin-right-5"></span>
+							    							2 giường đơn hoặc 1 giường đôi	    						
+							    						</div>
+							    						<div class="margin-bottom-5" style="color: #67a04f;">
+									      		 			<ul class="padding-left-15 margin-bottom-0">
+										      		 			<li class="margin-bottom-5">Bao gồm  ăn sáng, thuế VAT và phí dịch vụ.</li>
+									      		 			</ul>
+									      		 		</div>
+							            			</div>
+						            			</div>
+												<div class="visible-xs" style="border-top: 1px solid #ddd; padding: 10px 0 0; margin: 0 -8px">
+								                	<div class="text-center text-special" onclick="go_position_id('#h_hotel_rate')">
+								                	Chọn ngày để xem giá <i class="glyphicon glyphicon-arrow-up"></i>
+								                	</div>
+								                </div>
+											</td>
+											<td class="hidden-xs" align="center" style="vertical-align:middle;">
+												<span><span class="icon icon-person-lg"></span><span class="icon icon-person-lg"></span></span>						
+											</td>
+										</tr>									
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+					<h2 class="bpv-collapse collapsed margin-top-30" data-target="#hotel_policies" id="h_hotel_policies">
+						Thông tin<span class="glyphicon glyphicon-chevron-up visible-xs"></span>
+					</h2>
+					<div role="tabpanel" class="tab-pane" id="hotel_policies">
+						<div class="bpv-box">
+							<div class="content hotel-detail-desc padding-top-0">
+								<div class="item clearfix">
+									<div class="col-item-title">
+										Thời gian nhận phòng			
+									</div>
+									<div class="col-item-content">14:00</div>
+								</div>
+								<div class="item clearfix">
+									<div class="col-item-title">
+										Thời gian trả phòng			
+									</div>
+									<div class="col-item-content">12:00</div>
+								</div>
+								<div class="item clearfix">
+									<div class="col-item-title">
+										Quy định nhận phòng			
+									</div>
+									<div class="col-item-content">
+										Khi đến nhận phòng, quý khách vui lòng mang theo:<br>- CMTND hoặc passport.<br>- Phiếu xác nhận đặt phòng của Best Price<br><b>Lưu ý:</b> theo quy định của pháp luật Việt Nam, khi 1 khách nước ngoài + 1 khách Việt Nam ở chung một phòng thì yêu cầu phải có giấy đăng ký kết hôn.			
+									</div>
+								</div>
+								<div class="item clearfix">
+									<div class="col-item-title">
+										Quy định hủy/đổi đặt phòng			
+									</div>
+									<div class="col-item-content">
+										<div class="margin-bottom-5"><b>Phí hủy đổi đặt phòng = phí hủy/đổi của khách sạn + phí xử lý giao dịch của Best Price.</b></div>
+										<div class="margin-bottom-5"><span class="glyphicon glyphicon-asterisk margin-right-5"></span> Phí hủy/đổi của khách sạn được chính khách sạn quy định như sau:</div>
+										<div class="margin-bottom-5" style="padding-left:15px">
+											<div class="nodeBox textNodeBox nodeHidden ">
+												<div class="nodeLabel ">
+													<span class="nodeLabelBox repTarget "><strong>Đối với các đơn phòng nhỏ hơn 5 phòng:</strong></span>
+												</div>
+											</div>
+											<div class="nodeBox textNodeBox nodeHidden ">
+												<div class="nodeLabel "><span class="nodeLabelBox repTarget ">- Không tính phí hủy nếu khách hàng báo trước 30 ngày (tính từ ngày đến).</span></div>
+											</div>
+											<div class="nodeBox textNodeBox nodeHidden ">
+												<div class="nodeLabel "><span class="nodeLabelBox repTarget ">- Tính phí 50% tổng số tiền đặt phòng nếu khách hàng báo trước 29-14 ngày (tính từ ngày đến).</span></div>
+											</div>
+											<div class="nodeBox textNodeBox nodeHidden ">
+												<div class="nodeLabel "><span class="nodeLabelBox repTarget ">- Tính phí 100% tổng số tiền đặt phòng nếu khách hàng hủy đặt phòng dưới 14 ngày (tính từ ngày đến).</span></div>
+												<div class="nodeLabel ">&nbsp;</div>
+											</div>
+											<div class="nodeBox textNodeBox nodeHidden ">
+												<div class="nodeLabel "><span class="nodeLabelBox repTarget "><strong><span class="nodeText editable "><span class="  ">Đối với đơn phòng từ 5 phòng trở lên:</span></span>:</strong></span></div>
+											</div>
+											<div class="nodeBox textNodeBox nodeHidden ">
+												<div class="nodeLabel "><span class="nodeLabelBox repTarget ">- Không tính phí hủy nếu khách hàng báo trước 45 ngày (tính từ ngày đến).</span></div>
+											</div>
+											<div class="nodeBox textNodeBox nodeHidden ">
+												<div class="nodeLabel "><span class="nodeLabelBox repTarget ">- Tính phí 50% tổng số tiền đặt phòng nếu khách hàng báo trước 45-21 ngày (tính từ ngày đến).</span></div>
+											</div>
+											<div class="nodeBox textNodeBox nodeHidden ">
+												<div class="nodeLabel "><span class="nodeLabelBox repTarget ">- Tính phí 100% tổng số tiền đặt phòng nếu khách hàng hủy đặt phòng dưới 21 ngày (tính từ ngày đến).</span></div>
+											</div>									
+										</div>	
+										<div class="margin-bottom-5"><span class="glyphicon glyphicon-asterisk margin-right-5"></span> Phí phí xử lý giao dịch của Best Price:</div>
+										<div class="margin-bottom-5" style="padding-left:15px">
+											- Đặt dịch vụ dưới 3 triệu: 2% tổng giá trị đặt phòng (tối thiểu 30.000 đ)<br>- Đặt dịch vụ trên 3 triệu: 1,5% tổng giá trị đặt phòng				
+										</div>
+									</div>
+								</div>
+								<div class="item clearfix" >
+									<div class="col-item-title">
+										Trẻ em và giường phụ			
+									</div>
+									<div class="col-item-content">
+										<table width="100%" class="margin-bottom-10">
+											<tr>
+												<td class="td-1"><span class="icon icon-infant margin-right-5"></span>Em bé (dưới 4 tuổi)</td>
+												<td class="td-2">Trẻ em dưới 4 tuổi miễn phí, ngủ chung với bố mẹ</td>
+											</tr>
+											<tr>
+												<td>
+													<span class="icon icon-child margin-right-5"></span>
+													Trẻ em (4 đến 12 tuổi)						
+												</td>
+												<td>- Phụ thu trẻ em từ 04 đến 11 tuổi :
+													+ Nếu có 1 trẻ em: phụ thu thêm 350.000vnd/trẻ/đêm hoặc kê thêm giường phụ 800.000 vnđ/trẻ/đêm
+													+ Nếu có 2 trẻ em: phụ thu thêm 350.000vnd/đêm cho trẻ thứ nhất và kê thêm giường phụ cho trẻ thứ 2 là 800.000/trẻ/đêm.
+													- Trẻ em từ 12 tuổi trở lên: coi như 1 người lớn. Kê thêm giường phụ là 1.200.000vnd/giường/đêm.
+													- Tối đa 03 người lớn 01 phòng, không quá 04 người trong 1 phòng bao gồm cả trẻ em.
+												</td>
+											</tr>
+										</table>
+										<div class="margin-bottom-10"><span class="glyphicon glyphicon-asterisk margin-right-5"></span> Khách trên 12 tuổi được coi là người lớn.</div>
+										<div><span class="glyphicon glyphicon-asterisk margin-right-5"></span> Thông tin giường phụ thì tùy thuộc vào mỗi phòng. Vui lòng kiểm tra thông tin phòng để biết chi tiết.</div>	
+									</div>
+								</div>
+								<div class="item clearfix" style="border-bottom:0">
+									<div class="col-item-title">
+										Thông tin hữu ích			
+									</div>
+									<div class="col-item-content useful-info">
+										<h4>Khoảng cách tới các điểm đến hấp dẫn</h4>
+										<ul class="list-unstyled">
+											<li><a href="">Chợ đêm Phú Quốc</a><span>17.48 km</span>
+											</li>
+											<li><a href="">Dinh Cậu</a><span>17.26 km</span>
+											</li>
+											<li><a href="">Nhà tù Phú Quốc</a><span>37.18 km</span>
+											</li>
+											<li><a href="">Giếng Tiên Phú Quốc</a><span>37.68 km</span>
+											</li>
+											<li><a href="">Vinpearl Land Phú Quốc</a><span>2.66 km</span>
+											</li>
+																
+										</ul>
+														
+										<h4>Khoảng cách tới các khu vực</h4>
+										<ul class="list-unstyled">
+											<li><a href="">Thị trấn Dương Đông</a><span>17.53 km</span>
+											</li>
+											<li><a href="">Bãi biển Ông Lang</a><span>12.79 km</span>
+											</li>
+											<li><a href="">Bãi biển Cửa Lấp</a><span>24.67 km</span>
+											</li>
+											<li><a href="">Làng chài Hàm Ninh</a><span>26.01 km</span>
+											</li>
+											<li><a href="">Bãi Dài</a><span>17.77 km</span>
+											</li>
+											<li><a href="">Mũi Gành Dầu</a><span>13.52 km</span>
+											</li>
+											<li><a href="">Hòn Thơm</a><span>45.29 km</span>
+											</li>
+											<li><a href="">Suối Tranh</a><span>24.65 km</span>
+											</li>
+											<li><a href="">Bãi Sao</a><span>37.27 km</span>
+											</li>
+											<li><a href="">Bãi Khem</a><span>38.52 km</span>
+											</li>
+											<li><a href="">Quần đảo An Thới</a><span>39.72 km</span>
+											</li>
+											<li><a href="">Suối Đá Bàn</a><span>22.78 km</span>
+											</li>
+											<li><a href="">Suối Đá Ngọn</a><span>21.49 km</span>
+											</li>
+											<li><a href="">Đền Thờ Nguyễn Trung Trực</a><span>13.51 km</span>
+											</li>						
+										</ul>
+										<h4>Khoảng cách tới các Sân bay</h4>
+										<ul class="list-unstyled">
+											<li><a href="">Sân bay Quốc tế P</a>
+												<span>24.16 km</span>
+											</li>
+										</ul>
+									</div>
+								</div>		 
+							</div>
+						</div>
+					</div>
+					<h2 class="bpv-collapse collapsed margin-top-30" data-target="#tab_reviews" id="h_tab_reviews">
+						Đánh giá<span class="glyphicon glyphicon-chevron-up visible-xs"></span>
+					</h2>
+					<div role="tabpanel" class="tab-pane clearfix" id="tab_reviews" >
+						<div id="review_content">
+							<div class="reviews-panel">
+							<div id="rev_total">
+							<div id="rev_total_score_number">
+							<p class="review_text">
+							<span class="bpv-color-excellent">Tuyệt vời</span>				</p>
+							<div class="rev-total-score-color-excellent">
+							<span id="rsc_total">9</span>
+							</div>
+							<p id="rev_out_of">
+							Dựa theo  29 đánh giá				</p>
+							</div>
+							</div>
+							<div class="breakdown-score-wrapper">
+							<div class="trip-type trip-rating">
+							<div class="text-highlight title">Điểm chi tiết</div>
+							<ul>
+							<li class="score-type">
+							<span class="rdoSet">
+							Địa điểm						</span>
+							<div class="line">
+							<div style="width:90%;" class="fill"></div>
+							</div>
+							<span class="compositeCount">9</span>
+							</li>
+							<li class="score-type">
+							<span class="rdoSet">
+							Thoải mái						</span>
+							<div class="line">
+							<div style="width:91%;" class="fill"></div>
+							</div>
+							<span class="compositeCount">9.1</span>
+							</li>
+							<li class="score-type">
+							<span class="rdoSet">
+							Dịch vụ						</span>
+							<div class="line">
+							<div style="width:91%;" class="fill"></div>
+							</div>
+							<span class="compositeCount">9.1</span>
+							</li>
+							<li class="score-type">
+							<span class="rdoSet">
+							Nhân viên						</span>
+							<div class="line">
+							<div style="width:90%;" class="fill"></div>
+							</div>
+							<span class="compositeCount">9</span>
+							</li>
+							<li class="score-type">
+							<span class="rdoSet">
+							Sạch sẽ						</span>
+							<div class="line">
+							<div style="width:90%;" class="fill"></div>
+							</div>
+							<span class="compositeCount">9</span>
+							</li>
+							</ul>
+							</div>
+							<div class="trip-type">
+							<div class="text-highlight title" data-toggle="collapse" href="#reviewScoreBreakdown" style="cursor: pointer;">
+							Mức đánh giá					<span class="glyphicon glyphicon-menu-down pull-right visible-xs"></span>
+							</div>
+							<ul id="reviewScoreBreakdown" class="collapse in">
+
+							<li>
+							<a href="javascript:void(0)" class="review_filter" rel="nofollow" data-url="review/Reviews/?hotel_id=1395&amp;is_new_design=1&amp;review_score=1">
+							Tuyệt vời							</a>
+
+							<span class="pull-right">17</span>
+							</li>
+
+							<li>
+							<a href="javascript:void(0)" class="review_filter" rel="nofollow" data-url="review/Reviews/?hotel_id=1395&amp;is_new_design=1&amp;review_score=2">
+							Rất tốt							</a>
+
+							<span class="pull-right">12</span>
+							</li>
+
+							<li class="text-unhighlight">
+							Trung bình												
+							<span class="pull-right">0</span>
+							</li>
+
+							<li class="text-unhighlight">
+							Kém												
+							<span class="pull-right">0</span>
+							</li>
+
+							<li class="text-unhighlight">
+							Kinh khủng												
+							<span class="pull-right">0</span>
+							</li>
+							</ul>
+							</div>
+							<div class="trip-type">
+							<div class="text-highlight title" data-toggle="collapse" href="#reviewTravelerTypeFilter" style="cursor: pointer;">
+							Khách hàng    				<span class="glyphicon glyphicon-menu-down pull-right visible-xs"></span>
+							</div>
+							<ul id="reviewTravelerTypeFilter" class="collapse in">
+
+							<li>
+							<div class="bline"></div>
+							<span class="lbl1">
+							<a href="javascript:void(0)" class="review_filter" data-url="review/Reviews/?hotel_id=1395&amp;is_new_design=1&amp;customer_type=1">
+							Gia đình    							</a>
+							</span>
+
+							<span class="pull-right">
+							14    												</span>
+							</li>
+
+							<li>
+							<div class="bline"></div>
+							<span class="lbl1">
+							<a href="javascript:void(0)" class="review_filter" data-url="review/Reviews/?hotel_id=1395&amp;is_new_design=1&amp;customer_type=2">
+							Cặp đôi    							</a>
+							</span>
+
+							<span class="pull-right">
+							7    												</span>
+							</li>
+
+							<li>
+							<div class="bline"></div>
+							<span class="lbl1">
+							<a href="javascript:void(0)" class="review_filter" data-url="review/Reviews/?hotel_id=1395&amp;is_new_design=1&amp;customer_type=3">
+							Khách lẻ    							</a>
+							</span>
+
+							<span class="pull-right">
+							3    												
+							</span>
+							</li>
+
+							<li>
+							<div class="bline"></div>
+							<span class="lbl1">
+							<a href="javascript:void(0)" class="review_filter" data-url="review/Reviews/?hotel_id=1395&amp;is_new_design=1&amp;customer_type=4">
+							Doanh nghiệp    							
+							</a>
+							</span>
+
+							<span class="pull-right">
+							5    												
+							</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="re-view-detail padding-top-10" style="clear: both;">
+			<a style="font-size: 18px; text-decoration: underline;">
+				Xem chi tiết đánh giá<span class="glyphicon glyphicon-menu-down margin-left-5" style="font-size: 14px;"></span>
+			</a>
+		</div>
+		<div class="rv-content" style="display: none;">
+						<table id="comments_list">
+						<tbody><tr>
+				<td>
+					<div class="rev-u">
+						<span class="icon-list-review-sc bg-highlight">
+							9.5						</span>
+						<p class="margin-bottom-0 margin-top-5"><b>Thanh Nhàn</b></p>
+						<p class="margin-bottom-0">Hải Phòng</p>
+						<p class="margin-bottom-0 text-highlight review-date">
+							17/09/2019						</p>
+					</div>
+					
+					<div class="content-review">
+																					<h5>Đồ ăn hợp khẩu vị</h5>
+														<span id="good_2426_short">
+								Gia đình mình rất bất ngờ với không gian đẹp của khách sạn. Từ khi đến khách sạn cho đến khi đi mình được nhân viên khách sạn phục vụ rất chu đáo. Các bữa ăn tại khách sạn khá phong phú và phù hợp với khẩu vị của người ngoài…																	<a href="javascript:void(0)">Xem thêm »</a>
+															</span>
+															<span style="display: none;" id="good_2426_full">
+									Gia đình mình rất bất ngờ với không gian đẹp của khách sạn. Từ khi đến khách sạn cho đến khi đi mình được nhân viên khách sạn phục vụ rất chu đáo. Các bữa ăn tại khách sạn khá phong phú và phù hợp với khẩu vị của người ngoài Bắc như tôi. Đặc biệt, các bạn nhân viên đã niềm nở và vui vẻ khi mình nhờ giúp đỡ. Gia đình mình sẽ quay lại VinOasis vào một ngày không xa.									<a href="javascript:void(0)">Ít hơn «</a>
+								</span>
+																									
+						<div class="vote-up" id="vote_2426">
+															<a href="javascript:void(0)" class="voting_btn" uniqueid="2426"> 
+									Ý kiến này có hữu ích? <span class="icon icon-vote-up"></span>
+								</a>
+								<span id="vote_count_2426">
+								 (1)								</span>
+													</div>
+					</div>
+				</td>
+			</tr>
+						<tr>
+				<td>
+					<div class="rev-u">
+						<span class="icon-list-review-sc bg-highlight">
+							9.6						</span>
+						<p class="margin-bottom-0 margin-top-5"><b>Thục Anh</b></p>
+						<p class="margin-bottom-0">Ninh Bình</p>
+						<p class="margin-bottom-0 text-highlight review-date">
+							10/09/2019						</p>
+					</div>
+					
+					<div class="content-review">
+																					<h5>Khách sạn rộng và đẹp</h5>
+														<span id="good_2424_short">
+								Khách sạn VinOasis thật tuyệt vời từ cảnh quan môi trường trong lành, khách sạn rộng và đẹp. Khách sạn có nhiều khu vui chơi giải trí, gần casino, có vườn thú... Nhà hàng thức ăn phong phú và đa dạng. Nhân viên phục vụ chuyên nghiệp, tận…																	<a href="javascript:void(0)">Xem thêm »</a>
+															</span>
+															<span style="display: none;" id="good_2424_full">
+									Khách sạn VinOasis thật tuyệt vời từ cảnh quan môi trường trong lành, khách sạn rộng và đẹp. Khách sạn có nhiều khu vui chơi giải trí, gần casino, có vườn thú... Nhà hàng thức ăn phong phú và đa dạng. Nhân viên phục vụ chuyên nghiệp, tận tình và chu đáo. Cảm ơn BestPrice đã giới thiệu cho mình khách sạn này. Hẹn gặp lại trong dịp gần nhất									<a href="javascript:void(0)">Ít hơn «</a>
+								</span>
+																									
+						<div class="vote-up" id="vote_2424">
+															<a href="javascript:void(0)" class="voting_btn" uniqueid="2424"> 
+									Ý kiến này có hữu ích? <span class="icon icon-vote-up"></span>
+								</a>
+								<span id="vote_count_2424">
+																</span>
+													</div>
+					</div>
+				</td>
+			</tr>
+						<tr>
+				<td>
+					<div class="rev-u">
+						<span class="icon-list-review-sc bg-highlight">
+							9.5						</span>
+						<p class="margin-bottom-0 margin-top-5"><b>Anh Thư</b></p>
+						<p class="margin-bottom-0">Hồ Chí Minh</p>
+						<p class="margin-bottom-0 text-highlight review-date">
+							08/09/2019						</p>
+					</div>
+					
+					<div class="content-review">
+																					<h5>Tư vấn ân cần và nhiệt tình</h5>
+														<span id="good_2427_short">
+								Tư vấn khách rất ân cần và nhiệt tình chắc chắn BestPrice sẽ thành công rất nhiều. Đến với VinOasis là sự lựa chọn đúng đắn cho những kì nghỉ dưỡng tuyệt vời. Tuy cách sân bay gần 1 giờ nhưng khi đến đây tâm hồn hoàn toàn được…																	<a href="javascript:void(0)">Xem thêm »</a>
+															</span>
+															<span style="display: none;" id="good_2427_full">
+									Tư vấn khách rất ân cần và nhiệt tình chắc chắn BestPrice sẽ thành công rất nhiều. Đến với VinOasis là sự lựa chọn đúng đắn cho những kì nghỉ dưỡng tuyệt vời. Tuy cách sân bay gần 1 giờ nhưng khi đến đây tâm hồn hoàn toàn được thư giãn. Cơ sở hiện đại, khang trang. Dịch vụ tốt. Chúng tôi đến ở 3 ngày và được nhân viên giới thiệu đầy đủ các nơi ăn uống, mua sắm.									<a href="javascript:void(0)">Ít hơn «</a>
+								</span>
+																									
+						<div class="vote-up" id="vote_2427">
+															<a href="javascript:void(0)" class="voting_btn" uniqueid="2427"> 
+									Ý kiến này có hữu ích? <span class="icon icon-vote-up"></span>
+								</a>
+								<span id="vote_count_2427">
+																</span>
+													</div>
+					</div>
+				</td>
+			</tr>
+						<tr>
+				<td>
+					<div class="rev-u">
+						<span class="icon-list-review-sc bg-highlight">
+							9.6						</span>
+						<p class="margin-bottom-0 margin-top-5"><b>Thanh Loan</b></p>
+						<p class="margin-bottom-0">Hà Nội</p>
+						<p class="margin-bottom-0 text-highlight review-date">
+							06/09/2019						</p>
+					</div>
+					
+					<div class="content-review">
+																					<h5>Nhân viên tư vấn chu đáo</h5>
+														<span id="good_2423_short">
+								Vợ chồng mình đến văn phòng của công ty du lịch BestPrice được bạn Hảo tư vấn rất chu đáo, cẩn thận. Và có nhiều trải nghiệm tuyệt vời tại đây, dịch vụ đón tiếp nhiệt tình, phòng đẹp, đồ ăn đa dạng. Chắc chắn sẽ giới thiệu với bạn bè về nơi này.															</span>
+																									
+						<div class="vote-up" id="vote_2423">
+															<a href="javascript:void(0)" class="voting_btn" uniqueid="2423"> 
+									Ý kiến này có hữu ích? <span class="icon icon-vote-up"></span>
+								</a>
+								<span id="vote_count_2423">
+																</span>
+													</div>
+					</div>
+				</td>
+			</tr>
+						<tr>
+				<td>
+					<div class="rev-u">
+						<span class="icon-list-review-sc bg-highlight">
+							9.7						</span>
+						<p class="margin-bottom-0 margin-top-5"><b>Cô Tâm Như</b></p>
+						<p class="margin-bottom-0">Hải Dương</p>
+						<p class="margin-bottom-0 text-highlight review-date">
+							03/09/2019						</p>
+					</div>
+					
+					<div class="content-review">
+																					<h5>Khách sạn độc đáo và mới lạ</h5>
+														<span id="good_2422_short">
+								Con gái cô đã liên hệ đến công ty du lịch BestPrice để tham khảo dịch vụ cho kì nghỉ của gia đình và đã được bạn Duy tư vấn khách sạn VinOasis Phú Quốc. Và quả thật là khách sạn vô cùng độc đáo và mới lạ trên đảo ngọc ở Phú…																	<a href="javascript:void(0)">Xem thêm »</a>
+															</span>
+															<span style="display: none;" id="good_2422_full">
+									Con gái cô đã liên hệ đến công ty du lịch BestPrice để tham khảo dịch vụ cho kì nghỉ của gia đình và đã được bạn Duy tư vấn khách sạn VinOasis Phú Quốc. Và quả thật là khách sạn vô cùng độc đáo và mới lạ trên đảo ngọc ở Phú Quốc đã đem lại cho gia đình cô rất nhiều cảm xúc . Với đội ngũ nhân viên chuyên nghiệp đã hỗ trợ hướng dẫn gia đình cô rất nhiều , nhà hàng có nhiều món ăn ngon phong phú đa dạng hợp khẩu vị. Gia đình cô sẽ ghé thăm khách sạn ngày gần nhất									<a href="javascript:void(0)">Ít hơn «</a>
+								</span>
+																									
+						<div class="vote-up" id="vote_2422">
+															<a href="javascript:void(0)" class="voting_btn" uniqueid="2422"> 
+									Ý kiến này có hữu ích? <span class="icon icon-vote-up"></span>
+								</a>
+								<span id="vote_count_2422">
+																</span>
+													</div>
+					</div>
+				</td>
+			</tr>
+						<tr>
+				<td>
+					<div class="rev-u">
+						<span class="icon-list-review-sc bg-highlight">
+							9.6						</span>
+						<p class="margin-bottom-0 margin-top-5"><b>Mỹ Linh</b></p>
+						<p class="margin-bottom-0">Thái Bình</p>
+						<p class="margin-bottom-0 text-highlight review-date">
+							31/08/2019						</p>
+					</div>
+					
+					<div class="content-review">
+																					<h5>Hài lòng</h5>
+														<span id="good_2429_short">
+								Tôi đến đây lần đầu tiên sau nhiều lần du lịch ở nhiều nơi và tôi rất hài lòng về cách phục vụ và chăm sóc ở đây. Một nơi tuyệt vời để nghỉ dưỡng phòng ốc đẹp, thức ăn ngon, khu vui chơi đầy đủ, tiện lợi cho cả người…																	<a href="javascript:void(0)">Xem thêm »</a>
+															</span>
+															<span style="display: none;" id="good_2429_full">
+									Tôi đến đây lần đầu tiên sau nhiều lần du lịch ở nhiều nơi và tôi rất hài lòng về cách phục vụ và chăm sóc ở đây. Một nơi tuyệt vời để nghỉ dưỡng phòng ốc đẹp, thức ăn ngon, khu vui chơi đầy đủ, tiện lợi cho cả người lớn và trẻ nhỏ. Bãi biển sạch sẽ, quan cảnh khách sạn mát mẻ, mảng xanh nhiều nên cảm thấy thư thái. Tôi rất ấn tượng với cách phục vụ của nhân viên nơi đây năng động và chủ động giúp đỡ.									<a href="javascript:void(0)">Ít hơn «</a>
+								</span>
+																									
+						<div class="vote-up" id="vote_2429">
+															<a href="javascript:void(0)" class="voting_btn" uniqueid="2429"> 
+									Ý kiến này có hữu ích? <span class="icon icon-vote-up"></span>
+								</a>
+								<span id="vote_count_2429">
+																</span>
+													</div>
+					</div>
+				</td>
+			</tr>
+						<tr>
+				<td>
+					<div class="rev-u">
+						<span class="icon-list-review-sc bg-highlight">
+							9.4						</span>
+						<p class="margin-bottom-0 margin-top-5"><b>Thanh Đào</b></p>
+						<p class="margin-bottom-0">Vĩnh Phúc</p>
+						<p class="margin-bottom-0 text-highlight review-date">
+							30/08/2019						</p>
+					</div>
+					
+					<div class="content-review">
+																					<h5>Tuyệt vời</h5>
+														<span id="good_2420_short">
+								Phải nói rằng rất tuyệt vời. Hài lòng với tất cả các dịch vụ mà các nhân viên mang đến cho chúng tôi. Từ phòng ốc, không gian, các thứ các thứ. Ấn tượng nhất là cách phục vụ của các nhân viên, mặc dù mới đến lần đầu mà cứ ngỡ là trăm năm,cảm giác thân quen lắm, chỉn chu thân thiện và thật tận tâm.															</span>
+																									
+						<div class="vote-up" id="vote_2420">
+															<a href="javascript:void(0)" class="voting_btn" uniqueid="2420"> 
+									Ý kiến này có hữu ích? <span class="icon icon-vote-up"></span>
+								</a>
+								<span id="vote_count_2420">
+																</span>
+													</div>
+					</div>
+				</td>
+			</tr>
+						<tr>
+				<td>
+					<div class="rev-u">
+						<span class="icon-list-review-sc bg-highlight">
+							9.4						</span>
+						<p class="margin-bottom-0 margin-top-5"><b>Bảo Nam</b></p>
+						<p class="margin-bottom-0">Thanh Hóa</p>
+						<p class="margin-bottom-0 text-highlight review-date">
+							29/08/2019						</p>
+					</div>
+					
+					<div class="content-review">
+																					<h5>Phòng sạch sẽ và view đẹp</h5>
+														<span id="good_2428_short">
+								Gia đình anh đã được đồng nghiệp giới thiệu đến khách sạn VinOasis Phú Quốc. Khi đến thì chất lượng cũng như dịch vụ rất tốt. Nhân viên nhanh nhẹn và nhiệt tình. Phòng sạch sẽ, view đẹp. Sẽ quay lại đây vào dịp nghỉ hè tới.															</span>
+																									
+						<div class="vote-up" id="vote_2428">
+															<a href="javascript:void(0)" class="voting_btn" uniqueid="2428"> 
+									Ý kiến này có hữu ích? <span class="icon icon-vote-up"></span>
+								</a>
+								<span id="vote_count_2428">
+																</span>
+													</div>
+					</div>
+				</td>
+			</tr>
+						<tr>
+				<td>
+					<div class="rev-u">
+						<span class="icon-list-review-sc bg-highlight">
+							9.5						</span>
+						<p class="margin-bottom-0 margin-top-5"><b>Nhất An</b></p>
+						<p class="margin-bottom-0">Đà Nẵng</p>
+						<p class="margin-bottom-0 text-highlight review-date">
+							26/08/2019						</p>
+					</div>
+					
+					<div class="content-review">
+																					<h5>Đội ngũ nhân viên nhiệt tình</h5>
+														<span id="good_2421_short">
+								Đặt chân đến VinOasis là một điều chính xác gia đình tôi được trải nghiệm những dịch vụ tại đây với đội ngũ nhân viên nhiệt tình dễ mến như bạn thắng nhân viên hành lý và được thưởng thức những món ăn ngon tại Phú Quốc tôi sẽ book lịch vào dịp nghỉ tới đây.															</span>
+																									
+						<div class="vote-up" id="vote_2421">
+															<a href="javascript:void(0)" class="voting_btn" uniqueid="2421"> 
+									Ý kiến này có hữu ích? <span class="icon icon-vote-up"></span>
+								</a>
+								<span id="vote_count_2421">
+																</span>
+													</div>
+					</div>
+				</td>
+			</tr>
+						<tr>
+				<td>
+					<div class="rev-u">
+						<span class="icon-list-review-sc bg-highlight">
+							9.6						</span>
+						<p class="margin-bottom-0 margin-top-5"><b>Thành Nhân</b></p>
+						<p class="margin-bottom-0">Đà Nẵng</p>
+						<p class="margin-bottom-0 text-highlight review-date">
+							26/08/2019						</p>
+					</div>
+					
+					<div class="content-review">
+																					<h5>Nhân viên thân thiện và nhiệt tình</h5>
+														<span id="good_2425_short">
+								Trải nghiệm dịch vụ ở đây chỉ một hôm thôi nhưng mình cảm thấy rất tuyệt vời. Lượng khách đông đáng kể. Trang trí sang trọng , bãi biển sạch đẹp, khu vui chơi công viên nước nằm trong khuôn viên dễ dàng di chuyển. Nhân viên thân thiện…																	<a href="javascript:void(0)">Xem thêm »</a>
+															</span>
+															<span style="display: none;" id="good_2425_full">
+									Trải nghiệm dịch vụ ở đây chỉ một hôm thôi nhưng mình cảm thấy rất tuyệt vời. Lượng khách đông đáng kể. Trang trí sang trọng , bãi biển sạch đẹp, khu vui chơi công viên nước nằm trong khuôn viên dễ dàng di chuyển. Nhân viên thân thiện và nhiệt tình. Lựa chọn VinOasis chắc chắn là một điều không sai. Bởi nó có vị trí nằm gần nhà hàng và khu vui chơi rất thuận tiện cho việc đi lại. Hứa hẹn một ngày quay trở lại và trải nghiệm dịch vụ lâu hơn nữa nhé!									<a href="javascript:void(0)">Ít hơn «</a>
+								</span>
+																									
+						<div class="vote-up" id="vote_2425">
+															<a href="javascript:void(0)" class="voting_btn" uniqueid="2425"> 
+									Ý kiến này có hữu ích? <span class="icon icon-vote-up"></span>
+								</a>
+								<span id="vote_count_2425">
+																</span>
+													</div>
+					</div>
+				</td>
+			</tr>
+					</tbody></table>
+		<div class="pull-right" style="margin: 10px 0">	
+			<ul class="pagination"><li class="active hidden-xs"><span>1<span class="sr-only">(current)</span></span></li><li><a class="hidden-xs" href="https://www.bestprice.vn/review/Reviews/?hotel_id=1395&amp;is_new_design=1&amp;page=10" data-ci-pagination-page="2">2</a></li><li><a class="hidden-xs" href="https://www.bestprice.vn/review/Reviews/?hotel_id=1395&amp;is_new_design=1&amp;page=20" data-ci-pagination-page="3">3</a></li><li><a href="https://www.bestprice.vn/review/Reviews/?hotel_id=1395&amp;is_new_design=1&amp;page=10" data-ci-pagination-page="2" rel="next"><span class="glyphicon glyphicon-menu-right"></span></a></li></ul>			
+			<div style="float:right; padding:7px 0; margin-left:15px;">
+				<span class="hidden-xs">Hiển thị 1 - 10 trong 29 ý kiến</span><span class="visible-xs">Trang 1/3</span>			</div>
+		</div>
+	</div>
+	</div>
+	</div>
+					<h2 class="bpv-collapse collapsed margin-top-30" data-target="#tab_comment" id="h_tab_comment">
+						Hỏi đáp<span class="glyphicon glyphicon-chevron-up visible-xs"></span>
+					</h2>
+					<div role="tabpanel" class="tab-pane clearfix" id="tab_comment">
+						<div class="comment-facebook ">
+							<div class="comment-title hide">Hỏi đáp</div>
+							<div class="com-facebook">
+								<div class="fb-comments" data-href="https://www.bestprice.vn/vinpearl/vinoasis-phu-quoc-1395.html" data-width="100%" data-numposts="5"></div>
+							</div>
+						</div>
+					</div>		
+				</div>
+			</div>
+		</div>
+		<div class="container-cruise margin-top-30 padding-bottom-40">
+			<h2 class="text-center">Khách sạn tương tự</h2>
+			<div class="container">
+				<div class="row similar-cruise similar-list" id="similar_list_06874350">
+					<div class="col-xs-12 col-md-4 margin-bottom-20 " data-id="1708">
+						<div class="bpt-item">
+							<div class="item-img">
+					            <a href="">
+					            	<img class="img-responsive" alt="Dusit Princess Moonrise Phu Quoc" src="img/hotel/h4.jpg">
+					           	</a>
+							</div>
+					        <div class="item-content">
+					            <div class="item-name name">
+					            	<a class="item-name margin-top-0" href="">
+					            		Dusit Princess Moonrise Phu Quoc            		               	
+					            	</a>
+					               	<span class="icon icon-grey-star-5"></span>
+					   			</div>
+					        	
+					        	<div class="review item-review"></div>
+					        	
+					        	<div class="promotion"></div>			
+								<div class="item-price text-right margin-top-10">
+					        		<span class="price-from"><span>3.465.000đ</span></span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-md-4 margin-bottom-20 " data-id="1664">
+						<div class="bpt-item">
+							<div class="item-img">
+					            <a href="">
+					            	<img class="img-responsive" alt="L'azure Resort & Spa Phú Quốc" src="img/hotel/h5.jpg">
+					            </a>
+							</div>
+					        <div class="item-content">
+					            <div class="item-name name">
+					            	<a class="item-name margin-top-0" href="">
+					            		L'azure Resort & Spa Phú Quốc            		               
+					            	</a>
+					               	<span class="icon icon-grey-star-5"></span>
+					   			</div>
+					        	<div class="review item-review margin-bottom-5">
+						        	<div class="item-review item-review-2">
+										<span class="icon icon-review-black"></span>
+										<span class="text-choice">Tuyệt vời 92.4</span>
+										<span class="margin-right-5 margin-left-5">|</span>
+						    	    	<span class="numb-review"><span itemprop="reviewCount">1</span> đánh giá</span>	    
+						    	    </div>
+					        	</div>
+					        	<div class="promotion"></div>
+								<div class="item-price text-right margin-top-10">
+									<span class="price-from"><span>2.618.000đ</span></span>
+					        	</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-md-4 margin-bottom-20 " data-id="1342">
+						<div class="bpt-item">
+							<div class="item-img">
+					            <a href="vinpearl-resort-spa-phu-quoc-1342.html">
+					        		<img class="img-responsive" alt="Vinpearl Resort & Spa Phú Quốc" src="img/hotel/h6.jpg">
+					            </a>
+							</div>
+					        <div class="item-content">
+					            <div class="item-name name">
+					            	<a class="item-name margin-top-0" href="vinpearl-resort-spa-phu-quoc-1342.html">
+					            		Vinpearl Resort & Spa Phú Quốc            		               	
+					            	</a>
+					               	<span class="icon icon-grey-star-5"></span>
+					   			</div>
+					        	<div class="review item-review margin-bottom-5">
+					    			<div class="item-review item-review-2">
+										<span class="icon icon-review-black"></span>
+										<span class="text-choice">Tuyệt vời 9.1</span>
+										<span class="margin-right-5 margin-left-5">|</span>
+					    			    <span class="numb-review"><span itemprop="reviewCount">38</span> đánh giá</span>	    	
+					    			</div>
+					        	</div>
+					        	<div class="promotion"></div>	
+								<div class="item-price text-right margin-top-10">
+									<span class="price-origin"><span>3.950.000đ</span></span>
+									<span class="price-from"><span>2.950.000đ</span></span>
+					        	</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<div style="margin-bottom: 30px"></div>
+	<!-- <footer> -->
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="foot-col-1 col-xs-12 col-sm-6 col-md-3 col-lg-2 footerPanel">
+					<h3 class=""><strong>Về eliteTour.com</strong></h3>
+					<ul>
+						<li><a href="" title="">Chúng tôi</a></li>
+						<li><a href="contact.html" title="">Liên hệ</a></li>
+						<li><a href="" title="">EliteTour Blog</a></li>
+						<li><a href="" title="">PMS - Miễn phí</a></li>
+					</ul>
+				</div>
+				<div class="foot-col-2 col-xs-12 col-sm-6 col-md-3 col-lg-2 footerPanel">
+					<h3 class=""><strong>Thông Tin Cần Biết</strong></h3>
+					<ul>
+						<li><a href="" title="">Điều kiện & Điều khoản</a></li>
+						<li><a href="" title="">Quy chế hoạt động</a></li>
+						<li><a href="" title="">Câu hỏi thường gặp</a></li>
+					</ul>
+				</div>
+				<div class="foot-col-3 col-xs-12 col-sm-6 col-md-3 col-lg-2 footerPanel">
+					<h3 class=""><strong>Đối tác</strong></h3>
+					<ul>
+						<li><a href="" title="">Quy chế bảo hiểm Cathay</a></li>
+						<li><a href="" title="">Yêu cầu bồi thường Cathay</a></li>
+						<li><a href="" title="">Quy chế trả góp</a></li>
+					</ul>
+				</div>
+				<!-- <div class="foot-col-4 col-xs-12 col-sm-6 col-md-3 col-lg-3 footerPanel">
+					<h3 class=""><strong>Được chứng nhận</strong></h3>
+					<ul>
+						<li><a href="" title=""><img src="img/index/footer1.png" alt=""></a></li>
+					</ul>
+				</div>
+				<div class="foot-col-5 col-xs-12 col-sm-6 col-md-3 col-lg-3 footerPanel">
+					
+				</div>	 -->
+			</div>
+			<div class="row adress">
+				<div class="foot-col-7 col-xs-12 col-sm-12 col-md-9 col-lg-8">
+					<span>eliteTour.com © 2016 - <strong>Hệ thống đặt phòng khách sạn trực tuyến hàng đầu Việt Nam</strong></span>
+					<p>DKKD: 0312788481, Ngày cấp: 21/05/2014, Sở kế hoạch đầu tư thành phố Hồ Chí Minh</p>
+					<p><i class="fas fa-map-marker-alt"></i><strong>HN</strong>: Tòa nhà Vân Nam, 26 Đường Láng, Đống Đa, Hà Nội<a href="" title="" class="mapicon">(Xem bản đồ)</a></p>
+					<div class="plugin_like">
+						<span>Like để cập nhật cẩm nang du lịch</span>
+						<span>
+							<iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FiVIVU&width=112&layout=button_count&action=like&size=small&share=false&height=21&appId=213482276563566" width="112" height="21" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+						</span>
+						<span><i class="fad fa-envelope"></i><a href="" title="">tc@eliteTour.com</a></span>
+					</div>
+					<div class="social">
+						<ul>
+							<li><a href="" title=""><img src="img/index/facebook.svg" alt=""></a></li>
+							<li><a href="" title=""><img src="img/index/ic_zalo.svg" alt=""></a></li>
+							<li><a href="" title=""><img src="img/index/ic_insta.svg" alt=""></a></li>
+							<li><a href="" title=""><img src="img/index/twitter.svg" alt=""></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="foot-col-8 col-xs-12 col-sm-12 col-md-3 col-lg-4">
+					<p>Bạn cần trợ giúp? <strong>Hãy gọi ngay</strong></p>
+					<p><i class="fad fa-phone-alt"></i> <b>CSKH</b>: <a href="" title="">024 3564 3888</a></p>
+					<p><i class="fal fa-clock"></i>Từ 7h30 - 21h hằng ngày</p>
+					<p><img src="img/index/chat-icon-40x40.jfif" alt="" style="margin-right:5px"><a href="" title="">Tư vấn với Olivia - chatbot của EliteTour</a></p>
+					<p><strong>Tải ứng dụng EliteTour ngay</strong></p>
+					<div class="play_store">
+						<div class="img1">
+							<img src="img/index/i1.png" alt="">
+						</div>
+						<div class="img2">
+							<a href="" title=""><img src="img/index/i2.png" alt=""></a>
+							<a href="" title=""><img src="img/index/i3.png" alt=""></a>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</footer>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script src="js/owl-carousel/owl.carousel.min.js"></script>
+<script type="text/javascript" src="js/effect.js"></script>
+<script type="text/javascript" src="js/slide.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$("#datepicker").datepicker();
+	});  
+</script>
+<script type="text/javascript" src="js/hotel.min.js"></script>
+<script>$(function () {init_ui();show_off_zopim();});</script>
+<script>
+	function show_off_zopim(){
+		if(is_mobile_screen()){
+			var datetime = new Date();
+			var date = datetime.getDate();
+			var month = datetime.getMonth();
+			if(!is_working_time()){
+				$('.button-zopim').hide();
+			}
+		}
+	}
+	if($("#popup-newletter").length > 0){
+		jQuery(document).ready(function($){
+			$('#popup-newletter').on('show.bs.modal', function (e) {
+				var src = $('#popup-newletter img').attr('data-src');
+				$('#popup-newletter img').attr('src', src);
+			});					
+		});
+	}
+</script>
+</html>
